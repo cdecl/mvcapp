@@ -1,7 +1,7 @@
 #!/bin/bash
 
-rm -rf Publish/ubuntu-20.04
-dotnet publish -c Release -o Publish/ubuntu-20.04
+# rm -rf Publish/ubuntu-20.04
+# dotnet publish -c Release -o Publish/ubuntu-20.04
 
 if [ ! -z "$1" ] && [ $1 == "docker" ]; then
 	printf 'input version: '

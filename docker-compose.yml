@@ -1,0 +1,10 @@
+version: '3'
+services:
+  mvcapp:
+    image: cdecl/mvcapp:0.3
+    container_name: mvcapp
+    restart: always
+    #network_mode: "host"
+    ports:
+      - "8000:80"
+
