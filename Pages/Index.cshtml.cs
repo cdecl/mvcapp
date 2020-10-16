@@ -27,6 +27,7 @@ namespace mvcapp.Pages
             ViewData["Hostname"] = Dns.GetHostName();
             ViewData["CallCount"] = _callcount;
             ViewData["RemoteAddr"] = Request.HttpContext.Connection.RemoteIpAddress;
+            ViewData["XForwardedFor"] = Request.Headers["X-Forwarded-For"].FirstOrDefault();
         }
     }
 }
