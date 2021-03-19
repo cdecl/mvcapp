@@ -1,7 +1,7 @@
 version: '3'
 services:
   mvcapp:
-    image: cdecl/mvcapp:0.4
+    image: cdecl/mvcapp:0.6
     container_name: mvcapp
     restart: always
     # network_mode: "host"
