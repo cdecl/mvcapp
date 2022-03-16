@@ -28,7 +28,7 @@ namespace mvcapp.Controllers
 			ViewData["CallCount"] = _callcount;
 			ViewData["Sleep"] = sleep;
 			ViewData["RemoteAddr"] = Request.HttpContext.Connection.RemoteIpAddress;
-			ViewData["XForwardedFor"] = Request.Headers["X-Forwarded-For"].FirstOrDefault();
+			ViewData["XForwardedFor"] = Request.Headers["X-Forwarded-For"].ToString(); // .FirstOrDefault();
 			ViewData["UserAgent"] = Request.Headers["User-Agent"].ToString();
 		}
 
